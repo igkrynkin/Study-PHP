@@ -9,11 +9,22 @@
 </head>
 <body>
     <?php
-        $number = 5;
-        // $number = 45;
-        $num = 0;
+        define('MY_AGE', 39);
+        echo MY_AGE. '<br>';
 
-        echo 'Переменная:' . $number . $num;
+        $number = 5; // int
+        // $number = 45;
+        $num = -0.55; // float
+
+        $str = "Переменная"; // string
+        $bool = false; // boolean
+
+        $a = 0.5;
+        $b = "0.5";
+
+        echo $a + floatval($b);
+
+        echo $str . ': ' . $number . '. Var 2: ' . $num;
 
     ?>
 </body>

@@ -9,22 +9,13 @@
 </head>
 <body>
     <?php
-        define('MY_AGE', 39);
-        echo MY_AGE. '<br>';
 
-        $number = 5; // int
-        // $number = 45;
-        $num = -0.55; // float
+    $rand = mt_rand(1, 20);
+    $rand++;
+    echo $rand. '<br>';
 
-        $str = "Переменная"; // string
-        $bool = false; // boolean
-
-        $a = 0.5;
-        $b = "0.5";
-
-        echo $a + floatval($b);
-
-        echo $str . ': ' . $number . '. Var 2: ' . $num;
+    echo min(2, 5, 6, 1, 8, 3, 6).'<br>';
+    echo max(2, 5, 6, 1, 8, 3, 6).'<br>';
 
     ?>
 </body>
